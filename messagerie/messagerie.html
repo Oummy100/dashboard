@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Messagerie</title>
+</head>
+
+<body>
+    <!-- caroussel -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- fin  -->
+
+    <!-- content -->
+      <div class="grid grid-cols-8 p-3 gap-6 ">
+    <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+        <div>
+            <a href="#"><img src="../img/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="mt-15">
+            <ul>
+                <li class="mb-5  rounded-sm text-white text-xl"><a href="../index.html">Dashboard <i
+                            class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="../utilisateurs/utilisateurs.html">Utillisateurs <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 bg-orange-500 p-2 rounded-sm text-white text-xl"><a href="#">Messagerie <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="../tache/liste/encours.html">Taches <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="">Calendrier <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="rounded-sm text-white text-xl"><a href="">Comptes <i class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-span-7 w-full flex flex-col">
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+            <div class="text-white">
+                <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
+                <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i> <i
+                            class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i> Messagerie</a>
+                </p>
+            </div>
+            <div class="flex justify-between gap-2">
+                <a href=""><i class="fa-solid fa-gear text-2xl" style="color: rgb(255, 255, 255);"></i></a>
+                <a href="" class="relative"><i class="fa-solid fa-bell text-2xl" style="color: rgb(255, 255, 255);"></i> <span class="absolute -top-1 -right-1 w-2 h-2 border bg-orange-500 text-white text-xs rounded-full flex items-center justify-center"></span></a>
+                <a href=""><i class="fa-solid fa-user text-xl" style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </div>
+        <div class="rgba rounded-sm p-4 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg text-white h-[100vh]">
+            
+            <div class="border border-white rgba rounded flex justify-between py-1 px-10">
+
+                <a class="border border-white p-3 rounded-md flex items-center justify-center gap-3 inset-shadow-sm inset-shadow-gray-300/5 inset-shadow shadow-[inset_90px_0_50px_-85px_rgba(255,255,255),inset_-90px_0_50px_-85px_rgba(255,255,255)]" href="#">
+                    <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
+                    <p class="font-bold">Réception</p>
+                </a>
+
+                 <a class="p-3 flex items-center justify-center gap-3" href="envoi/envoi.html">
+                   <i class="ri-send-plane-line text-3xl"></i>
+                    <p class="font-bold">Envoi</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
+                    <p class="font-bold">Brouillon</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
+                    <p class="font-bold">Epinglé</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
+                    <p class="font-bold">Spam</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
+                    <p class="font-bold">Corbeille</p>
+                </a>
+
+            </div>
+
+            <div class="flex justify-between">
+                <div class="flex p-7 gap-5">
+                <label class="cursor-pointer ms-4">
+                            <input type="checkbox" class="peer hidden">
+
+                            <div class="
+        w-5
+        h-5
+        border
+        border-gray-100
+        rgba
+        peer-checked:bg-blue-500
+        peer-checked:border-orange-500
+        transition
+    ">
+                            </div>
+                </label>
+                <i class="fa-regular fa-trash-can text-2xl"></i>
+                <i class="fa-regular fa-envelope-open text-2xl"></i>
+                <i class="fa-regular fa-folder text-2xl"></i>
+                <i class="fa-solid fa-tag text-2xl"></i>
+            </div>
+
+                <div class="flex gap-3 items-center p-7">
+                    <i class="fa-solid fa-arrow-rotate-right text-2xl"></i>
+                    <i class="fa-solid fa-ellipsis-vertical text-2xl" style="color: rgb(255, 255, 255);"></i>
+                </div>
+            </div>
+
+            <div class="flex flex-col shadow-lg w-[100%] gap-2">
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-5">
+                        <label class="cursor-pointer ms-4 flex gap-2 items-center">
+                            <input type="checkbox" class="peer hidden">
+
+                            <div class="
+        w-5
+        h-5
+        border
+        border-gray-100
+        rgba
+        peer-checked:bg-blue-500
+        peer-checked:border-orange-500
+        transition
+    ">
+                            </div>
+
+                            <i class="ri-pushpin-line text-3xl"></i>
+                        </label>
+
+                        <div class="flex gap-2 items-center">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">AS</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-3">Adminou Sani</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Report du cas de client N°00000</p>
+                        </div>
+
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consect</p>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <p>08:23 AM</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-5">
+                        <label class="cursor-pointer ms-4 flex gap-2 items-center">
+                            <input type="checkbox" class="peer hidden">
+
+                            <div class="
+        w-5
+        h-5
+        border
+        border-gray-100
+        rgba
+        peer-checked:bg-blue-500
+        peer-checked:border-orange-500
+        transition
+    ">
+                            </div>
+
+                            <i class="ri-pushpin-line text-3xl"></i>
+                        </label>
+
+                        <div class="flex gap-2 items-center">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">ZT</p>
+                            </div>
+                            <div>
+                                <p class="font-bold mb-3">Zibo Tanko</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Report du cas de client N°00000</p>
+                        </div>
+
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consect</p>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <p>08:23 AM</p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

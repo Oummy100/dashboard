@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>Taches</title>
+</head>
+
+<body>
+    <!-- caroussel -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- fin  -->
+
+    <!-- content -->
+      <div class="grid grid-cols-8 p-3 gap-6 ">
+    <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+        <div>
+            <a href="#"><img src="../../img/Logo.svg" alt="logo"></a>
+        </div>
+        <div class="mt-15">
+            <ul>
+                <li class="mb-5  rounded-sm text-white text-xl"><a href="../../index.html">Dashboard <i
+                            class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5  bg-orange-500 p-2 rounded-sm text-white text-xl"><a href="#">Taches <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="mb-5 rounded-sm text-white text-xl"><a href="">Calendrier <i class="fa-solid fa-angle-right"
+                            style="color: rgb(255, 255, 255);"></i></a></li>
+                <li class="rounded-sm text-white text-xl"><a href="">Comptes <i class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-span-7 w-full flex flex-col">
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+            <div class="text-white">
+                <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
+                <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i> <i
+                            class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i> Liste des taches</a>
+                </p>
+            </div>
+            <div class="flex justify-between gap-2">
+                <a href=""><i class="fa-solid fa-gear text-2xl" style="color: rgb(255, 255, 255);"></i></a>
+                <a href="" class="relative"><i class="fa-solid fa-bell text-2xl" style="color: rgb(255, 255, 255);"></i> <span class="absolute -top-1 -right-1 w-2 h-2 border bg-orange-500 text-white text-xs rounded-full flex items-center justify-center"></span></a>
+                <a href=""><i class="fa-solid fa-user text-xl" style="color: rgb(255, 255, 255);"></i></a>
+            </div>
+        </div>
+        <div class="rgba rounded-sm p-4 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg text-white">
+
+            <div class="rgba shadow-md inset-shadow-sm inset-shadow-gray-300/50 flex justify-between mb-5 rounded p-2">
+                <p class="text-xl">Changer le mode visualisation</p>
+                <div class="flex gap-2 items-center">
+                    <a class="p-3 flex items-center justify-center gap-3 " href="../kanban/kanban.html">
+                   <i class="ri-kanban-view text-4xl"></i>
+                    <p class="font-bold">Kanban</p>
+                </a>
+
+                 <a class="border border-white p-3 rounded-md flex items-center justify-center gap-3 inset-shadow-sm inset-shadow-gray-300/5 inset-shadow shadow-[inset_90px_0_50px_-85px_rgba(255,255,255),inset_-90px_0_50px_-85px_rgba(255,255,255)]" href="#">
+                   <i class="fa-solid fa-list text-3xl"></i>
+                    <p class="font-bold">Liste</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-regular fa-calendar-minus text-3xl"></i>
+                    <p class="font-bold">Calendrier</p>
+                </a>
+                </div>
+            </div>
+            
+            <div class="border border-white rgba rounded flex justify-around py-1 px-10">
+
+                <a class="p-3 flex items-center justify-center gap-3 " href="enatente.html">
+                    <i class="fa-solid fa-hourglass-start text-3xl"></i>
+                    <p class="font-bold">En attente</p>
+                </a>
+
+                 <a class="border border-white p-3 rounded-md flex items-center justify-center gap-3 inset-shadow-sm inset-shadow-gray-300/5 inset-shadow shadow-[inset_90px_0_50px_-85px_rgba(255,255,255),inset_-90px_0_50px_-85px_rgba(255,255,255)]" href="encours.html">
+                   <i class="fa-solid fa-hourglass-half text-3xl"></i>
+                    <p class="font-bold">En cours</p>
+                </a>
+
+                <a class="p-3 rounded-md flex items-center justify-center gap-3" href="#">
+                    <i class="fa-solid fa-hourglass-end text-3xl"></i>
+                    <p class="font-bold">Terminé</p>
+                </a>
+
+            </div>
+            
+            
+            <div class="flex flex-col shadow-lg w-[100%] gap-2 mt-7">
+                    
+
+<!-- 4 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Tests d'intégration</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">RK</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">OM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">FK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>01 Avril - 04 Avril</p></div>
+    <div class="text-center me-35"><p>Basse</p></div>
+</div>
+
+<!-- 5 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Création du tableau de bord</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">BM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">HZ</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">IS</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>05 Avril - 08 Avril</p></div>
+    <div class="text-center me-35"><p>Haute</p></div>
+</div>
+
+<!-- 6 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Optimisation des performances</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">MS</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">ZM</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>10 Avril - 15 Avril</p></div>
+    <div class="text-center me-35"><p>Moyenne</p></div>
+</div>
+
+<!-- 7 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Correction des bugs critiques</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">IB</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">AM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">RK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>16 Avril - 19 Avril</p></div>
+    <div class="text-center me-35"><p>Haute</p></div>
+</div>
+
+<!-- 8 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Déploiement sur le serveur</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">SN</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">BM</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>20 Avril - 22 Avril</p></div>
+    <div class="text-center me-35"><p>Basse</p></div>
+</div>
+
+<!-- 9 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Rédaction de la documentation</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">FK</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">AS</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">MK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>24 Avril - 28 Avril</p></div>
+    <div class="text-center me-35"><p>Moyenne</p></div>
+</div>
+
+<!-- 10 -->
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+    <div><p class="font-bold">Titre de la tâche</p><p>Formation des utilisateurs</p></div>
+    <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">YA</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">OM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">HZ</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
+    <div><p class="font-bold">Durée de la tâche</p><p>30 Avril - 03 Mai</p></div>
+    <div class="text-center me-35"><p>Haute</p></div>
+</div>
+
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

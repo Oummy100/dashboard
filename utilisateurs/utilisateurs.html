@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Utilisateur</title>
+</head>
+
+<body>
+    <!-- caroussel -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- fin  -->
+
+    <!-- content -->
+    <div class="grid grid-cols-8 p-3 gap-6 ">
+        <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+            <div>
+                <a href="#"><img src="../img/Logo.svg" alt="logo"></a>
+            </div>
+            <div class="mt-15">
+                <ul>
+                    <li class="mb-5 rounded-sm text-white text-xl"><a href="../index.html">Dashboard
+                            <i class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
+                    <li class="mb-5 bg-orange-500 p-2 rounded-sm text-white text-xl"><a
+                            href="utilisateurs/utilisateurs.html">Utillisateurs <i class="fa-solid fa-angle-right"
+                                style="color: rgb(255, 255, 255);"></i></a></li>
+                    <li class="mb-5 rounded-sm text-white text-xl"><a href="../messagerie/messagerie.html">Messagérie <i
+                                class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
+                    <li class="mb-5 rounded-sm text-white text-xl"><a href="../tache/liste/encours.html">Taches <i class="fa-solid fa-angle-right"
+                                style="color: rgb(255, 255, 255);"></i></a></li>
+                    <li class="mb-5 rounded-sm text-white text-xl"><a href="">Calendrier <i
+                                class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Comptes <i class="fa-solid fa-angle-right"
+                                style="color: rgb(255, 255, 255);"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="lg:col-span-7 md:col-span-8  w-full flex flex-col">
+            <div
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+                <div class="text-white">
+                    <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
+                    <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney"
+                                style="color: rgb(255, 255, 255);"></i> <i class="fa-solid fa-angle-right"
+                                style="color: rgb(255, 255, 255);"></i> Liste des utilisateurs</a>
+                    </p>
+                </div>
+                <div class="flex justify-between gap-2">
+                    <a href=""><i class="fa-solid fa-gear text-2xl" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="" class="relative"><i class="fa-solid fa-bell text-2xl"
+                            style="color: rgb(255, 255, 255);"></i> <span
+                            class="absolute -top-1 -right-1 w-2 h-2 border bg-orange-500 text-white text-xs rounded-full flex items-center justify-center"></span></a>
+                    <a href=""><i class="fa-solid fa-user text-xl" style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="rgba rounded-sm p-4 flex flex-col gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+                <p class="text-white">Choisissez un des <span class="text-white font-bold">Filtre</span> suivant pour
+                    modifier la liste</p>
+                <div class="text-white grid grid-cols-3 gap-5">
+                    <div class="border rounded-md p-1 text-start ">Tous les rôles</div>
+                    <div class="border rounded-md p-1 text-start ">Tous les status</div>
+                    <div class="border rounded-md p-1 text-start ">Toutes les régions</div>
+                </div>
+
+                <div class="text-white flex justify-end gap-5">
+                    <input type="search" placeholder="Rechercher un utilisateur"
+                        class="border rounded-md p-1 w-51 focus:outline-none text-start">
+                    <button class="rounded-md py-2 px-3 text-start rgba"><i class="fa-solid fa-arrow-up"
+                            style="color: rgb(255, 255, 255);"></i> Exportez</button>
+                    <button class="rounded-md py-2 px-3 text-start bg-orange-500"><i class="fa-solid fa-plus"
+                            style="color: rgb(255, 255, 255);"></i> Ajoutez unnouvel utilisateur</button>
+                </div>
+
+                <div class="text-white flex flex-col gap-3">
+                    <div class="grid grid-cols-6 border-b border-gray-400 py-2 mb-2">
+                        <label class="cursor-pointer ms-4">
+                            <input type="checkbox" class="peer hidden">
+
+                            <div class="
+        w-5
+        h-5
+        border
+        border-gray-100
+        rgba
+        peer-checked:bg-blue-500
+        peer-checked:border-orange-500
+        transition
+    ">
+                            </div>
+                        </label>
+
+                        <p>Utilisateur</p>
+                        <p>Role</p>
+                        <p>Status</p>
+                        <p>Actions</p>
+                    </div>
+
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4">
+                            <input type="checkbox" class="peer hidden">
+
+                            <div class="
+        w-5
+        h-5
+        border
+        border-gray-100
+        rgba
+        peer-checked:bg-blue-500
+        peer-checked:border-orange-500
+        transition
+    ">
+                            </div>
+                        </label>
+
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">AS</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Adminou Sani</p>
+                                <p class="m-0">adminousani@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Administrateur</p>
+                        </div>
+
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-pen-clip text-2xl me-3" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-trash-can text-2xl" style="color: rgb(255, 255, 255);"></i>
+                            <i class="fa-solid fa-ellipsis-vertical text-2xl" style="color: rgb(255, 255, 255);"></i>
+                        </div>
+                    </div>
+
+
+
+                    <!-- 1 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4">
+                            <input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">BS</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Bassirou Saley</p>
+                                <p class="m-0">bassirousaley@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Administrateur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+
+                        <div class="flex gap-3">
+                            <i class="fa-solid fa-pen-clip text-2xl"></i>
+                            <i class="fa-solid fa-trash-can text-2xl"></i>
+                            <i class="fa-solid fa-ellipsis-vertical text-2xl"></i>
+                        </div>
+                    </div>
+
+                    <!-- 2 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">AM</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Amina Moussa</p>
+                                <p class="m-0">amina.moussa@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Marketeur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 3 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">IB</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Ibrahim Bello</p>
+                                <p class="m-0">ibrahim.bello@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Contrôleur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">FK</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Fatima Karim</p>
+                                <p class="m-0">fatima.karim@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Communicateur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 5 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">MS</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Moussa Souley</p>
+                                <p class="m-0">moussa.souley@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Administrateur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 6 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">HZ</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Halima Zakari</p>
+                                <p class="m-0">halima.z@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Marketeur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 7 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">OM</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Oumar Mahamadou</p>
+                                <p class="m-0">oumar.m@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Contrôleur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 8 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">SN</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Safiya Nouhou</p>
+                                <p class="m-0">safiya@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Communicateur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 9 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">DA</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Daouda Adamou</p>
+                                <p class="m-0">daouda@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Administrateur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 10 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">MK</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Mariam Kimba</p>
+                                <p class="m-0">mariam@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Marketeur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 11 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">YA</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Yacouba Ali</p>
+                                <p class="m-0">yacouba@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Contrôleur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 12 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">RK</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Rokia Kindo</p>
+                                <p class="m-0">rokia@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Communicateur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 13 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">IS</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Issa Soumana</p>
+                                <p class="m-0">issa@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Administrateur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 14 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">ZM</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Zara Mahamane</p>
+                                <p class="m-0">zara@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Marketeur</p>
+                        </div>
+                        <div>
+                            <p>Inactive</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+                    <!-- 15 -->
+                    <div
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
+                            <div
+                                class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
+                            </div>
+                        </label>
+                        <div class="flex gap-2">
+                            <div
+                                class="bg-white text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex justify-center items-center">
+                                <p class="m-0">BM</p>
+                            </div>
+                            <div>
+                                <p class="font-bold">Boubacar Mamane</p>
+                                <p class="m-0">boubacar@gmail.com</p>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Communicateur</p>
+                        </div>
+                        <div>
+                            <p>Active</p>
+                        </div>
+                        <div class="flex gap-3"><i class="fa-solid fa-pen-clip text-2xl"></i><i
+                                class="fa-solid fa-trash-can text-2xl"></i><i
+                                class="fa-solid fa-ellipsis-vertical text-2xl"></i></div>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
