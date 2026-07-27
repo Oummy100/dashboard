@@ -18,8 +18,8 @@
     <!-- fin  -->
 
     <!-- content -->
-      <div class="grid grid-cols-8 p-3 gap-6 ">
-    <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+      <div class="flex p-3 gap-4">
+    <div class="min-w-36 max-w-60 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg hidden lg:flex lg:flex-col">
         <div>
             <a href="#"><img src="img/Logo.svg" alt="logo"></a>
         </div>
@@ -41,8 +41,25 @@
         </div>
     </div>
 
-    <div class="col-span-7 w-full flex flex-col">
-        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+    <div class="flex-1 w-full flex flex-col">
+        <div
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg lg:hidden">
+                 <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰
+                </summary>
+                <ul class="flex justify-between gap-2 flex-wrap">
+                    <li class="rounded-sm p-2 bg-orange-500 text-white text-xl"><a href="../../index.html">Dashboard</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs</li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../tache/liste/encours.html">Taches</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Calendrier</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Comptes</a></li>
+                </ul>
+                </details> 
+
+                </div>
+        <div class="mb-5 rgba px-4 py-1 flex justify-between flex-wrap items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
             <div class="text-white">
                 <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
                 <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i> <i
@@ -56,8 +73,7 @@
             </div>
         </div>
         <div class="rgba rounded-sm p-4 grid grid-cols-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
-            
-            <div class="">
+            <div class="lg:col-span-1 col-span-2">
                 <div class="my-3">
                 <p class="text-3xl text-white font-bold">Statistiques Nationales</p>
                 </div>
@@ -131,9 +147,9 @@
                     <p>Faites glisser la souris au dessus de la carte pour voir les statistiques</p>
                 </div>
             </div>
-            <div class="grid grid-cols-2 gap-5 w-fit h-fit text-white">
+            <div class="grid grid-cols-2 gap-5 w-fit h-fit text-white lg:col-span-1 col-span-2">
                 
-                <div class="rgba flex flex-col justfy-center items-center rounded-md h-80 py-2 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg>
+                <div class="rgba flex flex-col justfy-center items-center rounded-md h-80 py-2 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
                     <p class="text-xl">Statistiques utilisateurs</p>
 
                     <svg width="400px" height="243px" viewBox="0 0 2253.00 2253.00" version="1.1" xml:space="preserve"
@@ -157,13 +173,13 @@
                         <g id="SVGRepo_iconCarrier">
                             <path
                                 d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
-                                style="fill:#b63816;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
+                                style="fill:#ffc39e;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
                             <path
                                 d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
-                                style="fill:#ea6a47;stroke:#202020;stroke-width:0.02253;" id="path7" />
+                                style="fill:#ff6901;stroke:#202020;stroke-width:0.02253;" id="path7" />
                             <path
                                 d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
-                                style="fill:#eee;stroke:#202020;stroke-width:0.02253;" id="path9" />
+                                style="fill:#ff6901;stroke:#202020;stroke-width:0.02253;" id="path9" />
                         </g>
                     </svg>
 
@@ -197,13 +213,13 @@
                         <g id="SVGRepo_iconCarrier">
                             <path
                                 d="M1147.83,208.333c-517.767,0 -937.5,419.733 -937.5,937.5c-0,428.307 290.274,802.155 705.228,908.271l116.136,-454.135c-207.477,-53.058 -352.614,-239.982 -352.614,-454.136c-0,-258.883 209.866,-468.75 468.75,-468.75l-0,-468.75Z"
-                                style="fill:#b63816;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
+                                style="fill:#ff6901;stroke:#202020;stroke-width:0.02253;fill-opacity:1" id="path5" />
                             <path
                                 d="M1997.49,749.576c-153.977,-330.174 -485.321,-541.243 -849.663,-541.243l-0,468.704c182.171,0 347.843,105.535 424.832,270.622l424.831,-198.083Z"
-                                style="fill:#ea6a47;stroke:#202020;stroke-width:0.02253;" id="path7" />
+                                style="fill:#ffc39e;stroke:#202020;stroke-width:0.02253;" id="path7" />
                             <path
                                 d="M905.188,2051.39c500.124,134.008 1014.19,-162.788 1148.2,-662.913c64.353,-240.168 30.664,-496.064 -93.656,-711.393l-405.95,234.375c62.16,107.665 79.005,235.613 46.828,355.697c-67.003,250.062 -324.036,398.46 -574.099,331.456l-121.321,452.778Z"
-                                style="fill:#eee;stroke:#202020;stroke-width:0.02253;" id="path9" />
+                                style="fill:#fce1d1;stroke:#202020;stroke-width:0.02253;" id="path9" />
                         </g>
                     </svg>
 

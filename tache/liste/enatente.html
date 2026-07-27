@@ -19,8 +19,8 @@
     <!-- fin  -->
 
     <!-- content -->
-      <div class="grid grid-cols-8 p-3 gap-6 ">
-    <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+      <div class="flex p-3 gap-4">
+    <div class="min-w-36 max-w-60 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg hidden lg:flex lg:flex-col">
         <div>
             <a href="#"><img src="../../img/Logo.svg" alt="logo"></a>
         </div>
@@ -42,8 +42,27 @@
         </div>
     </div>
 
-    <div class="col-span-7 w-full flex flex-col">
-        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+    <div class="flex-1 w-full flex flex-col">
+
+        <div
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg lg:hidden">
+                 <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰
+                </summary>
+                <ul class="flex justify-between gap-2 flex-wrap">
+                    <li class="rounded-sm text-white text-xl"><a href="../../index.html">Dashboard</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs</li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie</a></li>
+                    <li class="rounded-sm p-2 bg-orange-500 text-white text-xl"><a href="../../tache/liste/encours.html">Taches</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Calendrier</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../compte/compte.html">Comptes</a></li>
+                </ul>
+                </details> 
+
+                </div>
+
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg flex-wrap">
             <div class="text-white">
                 <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
                 <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i> <i
@@ -58,9 +77,9 @@
         </div>
         <div class="rgba rounded-sm p-4 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg text-white">
 
-            <div class="rgba shadow-md inset-shadow-sm inset-shadow-gray-300/50 flex justify-between mb-5 rounded p-2">
+            <div class="rgba shadow-md inset-shadow-sm inset-shadow-gray-300/50 flex justify-between mb-5 rounded p-2 flex-wrap">
                 <p class="text-xl">Changer le mode visualisation</p>
-                <div class="flex gap-2 items-center">
+                <div class="flex gap-2 items-center flex-wrap">
                     <a class="p-3 flex items-center justify-center gap-3 " href="../kanban/kanban.html">
                    <i class="ri-kanban-view text-4xl"></i>
                     <p class="font-bold">Kanban</p>
@@ -78,7 +97,7 @@
                 </div>
             </div>
             
-            <div class="border border-white rgba rounded flex justify-around py-1 px-10">
+            <div class="border border-white rgba rounded flex justify-around py-1 px-10 flex-wrap">
 
                 <a class="p-3 flex items-center justify-center gap-3 " href="#">
                     <i class="fa-solid fa-hourglass-start text-3xl"></i>
@@ -102,7 +121,7 @@
                     
 
 <!-- 1 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div>
         <p class="font-bold">Titre de la tâche</p>
         <p>Développement du Minimum Viable Product</p>
@@ -129,7 +148,7 @@
 </div>
 
 <!-- 2 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Conception de la maquette Figma</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">AM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">SN</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">MK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>22 Mars - 25 Mars</p></div>
@@ -137,7 +156,7 @@
 </div>
 
 <!-- 3 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Création de l'API REST</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">DA</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">YA</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>26 Mars - 30 Mars</p></div>
@@ -145,7 +164,7 @@
 </div>
 
 <!-- 4 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Tests d'intégration</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">RK</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">OM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">FK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>01 Avril - 04 Avril</p></div>
@@ -153,7 +172,7 @@
 </div>
 
 <!-- 5 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Création du tableau de bord</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">BM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">HZ</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">IS</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>05 Avril - 08 Avril</p></div>
@@ -161,7 +180,7 @@
 </div>
 
 <!-- 6 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Optimisation des performances</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">MS</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">ZM</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>10 Avril - 15 Avril</p></div>
@@ -169,7 +188,7 @@
 </div>
 
 <!-- 7 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Correction des bugs critiques</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">IB</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">AM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">RK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>16 Avril - 19 Avril</p></div>
@@ -177,7 +196,7 @@
 </div>
 
 <!-- 8 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Déploiement sur le serveur</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">SN</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">BM</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>20 Avril - 22 Avril</p></div>
@@ -185,7 +204,7 @@
 </div>
 
 <!-- 9 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Rédaction de la documentation</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">FK</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">AS</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">MK</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>24 Avril - 28 Avril</p></div>
@@ -193,7 +212,7 @@
 </div>
 
 <!-- 10 -->
-<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-4">
+<div class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-4 grid-cols-2">
     <div><p class="font-bold">Titre de la tâche</p><p>Formation des utilisateurs</p></div>
     <div class="flex flex-col gap-2"><p>Utilisateurs affectés</p><div class="flex"><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center"><p class="m-0 ms-1">YA</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">OM</p></div><div class="bg-sky-50/80 text-orange-500 text-2xl rounded-full w-[3.25rem] h-[3.25rem] flex items-center -ml-8"><p class="m-0 ms-1">HZ</p></div><div class="text-2xl flex items-center"><p class="m-0 ms-1">•••</p></div></div></div>
     <div><p class="font-bold">Durée de la tâche</p><p>30 Avril - 03 Mai</p></div>

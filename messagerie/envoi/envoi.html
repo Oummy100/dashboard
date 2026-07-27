@@ -19,8 +19,13 @@
     <!-- fin  -->
 
     <!-- content -->
-      <div class="grid grid-cols-8 p-3 gap-6 ">
-    <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+      <div class="flex p-3 gap-4">
+
+        
+
+    <div class="min-w-36 max-w-60 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg hidden lg:flex lg:flex-col">
+
+
         <div>
             <a href="#"><img src="../../img/Logo.svg" alt="logo"></a>
         </div>
@@ -42,8 +47,27 @@
         </div>
     </div>
 
-    <div class="col-span-7 w-full flex flex-col">
-        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+    <div class="flex-1 w-full flex flex-col">
+
+        <div
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg lg:hidden">
+                 <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰
+                </summary>
+                <ul class="flex justify-between gap-2 flex-wrap">
+                    <li class="rounded-sm text-white text-xl"><a href="../../index.html">Dashboard</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs</li>
+                    <li class="rounded-sm p-2 bg-orange-500 text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../tache/liste/encours.html">Taches</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Calendrier</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../compte/compte.html">Comptes</a></li>
+                </ul>
+                </details> 
+
+                </div>
+
+        <div class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg flex-wrap">
             <div class="text-white">
                 <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
                 <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney" style="color: rgb(255, 255, 255);"></i> <i
@@ -58,7 +82,7 @@
         </div>
         <div class="rgba rounded-sm p-4 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg text-white h-[100vh]">
             
-            <div class="border border-white rgba rounded flex justify-between py-1 px-10">
+            <div class="border border-white rgba rounded flex flex-wrap justify-between py-1 px-10">
 
                 <a class="p-3 flex items-center justify-center gap-3 " href="../messagerie.html">
                     <i class="fa-regular fa-envelope text-3xl" style="color: rgb(255, 255, 255);"></i>
@@ -93,7 +117,7 @@
             </div>
             
             <div class="flex justify-between">
-                <div class="flex p-7 gap-5">
+                <div class="flex md:p-7 mt-7 gap-5">
                 <label class="cursor-pointer ms-4">
                             <input type="checkbox" class="peer hidden">
 
@@ -122,7 +146,7 @@
             </div>
             <div class="flex flex-col shadow-lg w-[100%] gap-2">
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-5">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid md:grid-cols-5 grid-cols-2">
                         <label class="cursor-pointer ms-4 flex gap-2 items-center">
                             <input type="checkbox" class="peer hidden">
 
@@ -164,7 +188,7 @@
                         </div>
                     </div>
 
-                    </div>
+            </div>
             </div>
         </div>
     </div>

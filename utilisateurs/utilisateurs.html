@@ -18,8 +18,8 @@
     <!-- fin  -->
 
     <!-- content -->
-    <div class="grid grid-cols-8 p-3 gap-6 ">
-        <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+    <div class="flex p-3 gap-4">
+        <div class="min-w-36 max-w-60 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg hidden lg:flex lg:flex-col">
             <div>
                 <a href="#"><img src="../img/Logo.svg" alt="logo"></a>
             </div>
@@ -36,16 +36,35 @@
                                 style="color: rgb(255, 255, 255);"></i></a></li>
                     <li class="mb-5 rounded-sm text-white text-xl"><a href="">Calendrier <i
                                 class="fa-solid fa-angle-right" style="color: rgb(255, 255, 255);"></i></a></li>
-                    <li class="rounded-sm text-white text-xl"><a href="">Comptes <i class="fa-solid fa-angle-right"
+                    <li class="rounded-sm text-white text-xl"><a href="../compte/compte.html">Comptes <i class="fa-solid fa-angle-right"
                                 style="color: rgb(255, 255, 255);"></i></a>
                     </li>
                 </ul>
             </div>
         </div>
 
-        <div class="lg:col-span-7 md:col-span-8  w-full flex flex-col">
+        <div class="flex-1 w-full flex flex-col">
+
             <div
-                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg lg:hidden">
+                 <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰
+                </summary>
+                <ul class="flex justify-between gap-2 flex-wrap">
+                    <li class="rounded-sm text-white text-xl"><a href="../../index.html">Dashboard</a></li>
+                    <li class="rounded-sm p-2 bg-orange-500 text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs</li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../tache/liste/encours.html">Taches</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Calendrier</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Comptes</a></li>
+                </ul>
+                </details> 
+
+                </div>
+
+            <div
+                class="mb-5 rgba px-4 py-1 flex justify-between flex-wrap items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
                 <div class="text-white">
                     <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
                     <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney"
@@ -70,7 +89,7 @@
                     <div class="border rounded-md p-1 text-start ">Toutes les régions</div>
                 </div>
 
-                <div class="text-white flex justify-end gap-5">
+                <div class="text-white flex justify-end gap-5 flex-wrap">
                     <input type="search" placeholder="Rechercher un utilisateur"
                         class="border rounded-md p-1 w-51 focus:outline-none text-start">
                     <button class="rounded-md py-2 px-3 text-start rgba"><i class="fa-solid fa-arrow-up"
@@ -79,8 +98,9 @@
                             style="color: rgb(255, 255, 255);"></i> Ajoutez unnouvel utilisateur</button>
                 </div>
 
-                <div class="text-white flex flex-col gap-3">
-                    <div class="grid grid-cols-6 border-b border-gray-400 py-2 mb-2">
+                <div class="overflow-x-auto">
+    <div class="min-w-[900px] text-white flex flex-col gap-3">
+                    <div class="grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4">
                             <input type="checkbox" class="peer hidden">
 
@@ -104,7 +124,7 @@
                     </div>
 
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4">
                             <input type="checkbox" class="peer hidden">
 
@@ -151,7 +171,7 @@
 
                     <!-- 1 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4">
                             <input type="checkbox" class="peer hidden">
                             <div
@@ -186,7 +206,7 @@
 
                     <!-- 2 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -215,7 +235,7 @@
 
                     <!-- 3 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -244,7 +264,7 @@
 
                     <!-- 4 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -273,7 +293,7 @@
 
                     <!-- 5 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -302,7 +322,7 @@
 
                     <!-- 6 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -331,7 +351,7 @@
 
                     <!-- 7 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -360,7 +380,7 @@
 
                     <!-- 8 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -389,7 +409,7 @@
 
                     <!-- 9 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -418,7 +438,7 @@
 
                     <!-- 10 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -447,7 +467,7 @@
 
                     <!-- 11 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -476,7 +496,7 @@
 
                     <!-- 12 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -505,7 +525,7 @@
 
                     <!-- 13 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -534,7 +554,7 @@
 
                     <!-- 14 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">
@@ -563,7 +583,7 @@
 
                     <!-- 15 -->
                     <div
-                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-6">
+                        class="rgba rounded-sm p-2 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg grid grid-cols-[60px_3fr_2fr_2fr_120px] items-center gap-4">
                         <label class="cursor-pointer ms-4"><input type="checkbox" class="peer hidden">
                             <div
                                 class="w-5 h-5 border border-gray-100 rgba peer-checked:bg-blue-500 peer-checked:border-orange-500 transition">

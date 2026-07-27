@@ -19,8 +19,8 @@
     <!-- fin  -->
 
     <!-- content -->
-    <div class="grid grid-cols-8 p-3 gap-6 ">
-        <div class="col-span-1 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+    <div class="flex p-3 gap-4">
+        <div class="min-w-36 max-w-60 px-3 py-5 rounded-sm rgba inset-shadow-sm inset-shadow-gray-300/50 shadow-lg hidden lg:flex lg:flex-col">
             <div>
                 <a href="#"><img src="../../img/Logo.svg" alt="logo"></a>
             </div>
@@ -44,9 +44,28 @@
             </div>
         </div>
 
-        <div class="col-span-7 w-full flex flex-col">
+        <div class="flex-1 w-full flex flex-col">
+
             <div
-                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg lg:hidden">
+                 <details class="lg:hidden text-white">
+                <summary class="cursor-pointer text-3xl">
+                    ☰
+                </summary>
+                <ul class="flex justify-between gap-2 flex-wrap">
+                    <li class="rounded-sm text-white text-xl"><a href="../../index.html">Dashboard</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../utilisateurs/utilisateurs.html">Utillisateurs</li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../messagerie/messagerie.html">Messagerie</a></li>
+                    <li class="rounded-sm p-2 bg-orange-500 text-white text-xl"><a href="../../tache/liste/encours.html">Taches</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="">Calendrier</a></li>
+                    <li class="rounded-sm text-white text-xl"><a href="../../compte/compte.html">Comptes</a></li>
+                </ul>
+                </details> 
+
+        </div>
+
+            <div
+                class="mb-5 rgba px-4 py-1 flex justify-between items-center rounded-sm inset-shadow-sm inset-shadow-gray-300/50 shadow-lg flex-wrap">
                 <div class="text-white">
                     <h1 class="text-2xl font-bold">Bonjour, Adminou Sani</h1>
                     <p class="my-2"><a href=""><i class="fa-solid fa-house-chimney"
@@ -65,9 +84,9 @@
             <div class="rgba rounded-sm p-4 gap-5 inset-shadow-sm inset-shadow-gray-300/50 shadow-lg text-white">
 
                 <div
-                    class="rgba shadow-md inset-shadow-sm inset-shadow-gray-300/50 flex justify-between mb-5 rounded p-2">
+                    class="rgba shadow-md inset-shadow-sm inset-shadow-gray-300/50 flex justify-between mb-5 rounded p-2 flex-wrap">
                     <p class="text-xl">Changer le mode visualisation</p>
-                    <div class="flex gap-2 items-center">
+                    <div class="flex gap-2 items-center flex-wrap">
                         <a class="border border-white p-3 rounded-md p-3 flex items-center justify-center gap-3 inset-shadow-sm inset-shadow-gray-300/5 inset-shadow shadow-[inset_90px_0_50px_-85px_rgba(255,255,255),inset_-90px_0_50px_-85px_rgba(255,255,255)]" href="#">
                             <i class="ri-kanban-view text-4xl"></i>
                             <p class="font-bold">Kanban</p>
@@ -86,12 +105,13 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-3 shadow-lg mt-7 gap-5">
+                <div class="overflow-x-auto">
+    <div class="min-w-[900px] text-white flex gap-3">
                     <div
-                        class="col-span-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50">
-                        <div class="flex gap-3 items-center p-3">
+                        class="flex-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50">
+                        <div class="flex gap-3 items-center p-3 flex-wrap">
                             <i class="fa-solid fa-hourglass-start text-3xl"></i>
-                            <p class="font-bold text-3xl">Taches en attente</p>
+                            <p class="font-bold md:text-3xl text-md">Taches en attente</p>
                         </div>
 
                         <div class="rgba  p-3 rounded-md inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
@@ -467,10 +487,10 @@
                     </div>
 
                     <div
-                        class="col-span-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50 h-fit">
-                        <div class="flex gap-3 items-center p-3">
+                        class="flex-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50 h-fit">
+                        <div class="flex gap-3 items-center p-3 flex-wrap">
                             <i class="fa-solid fa-hourglass-half text-3xl"></i>
-                            <p class="font-bold text-3xl">Taches en cours</p>
+                            <p class="font-bold md:text-3xl text-md">Taches en cours</p>
                         </div>
 
                         <div class="rgba  p-3 rounded-md inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
@@ -675,10 +695,10 @@
                     </div>
 
                     <div
-                        class="col-span-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50">
-                        <div class="flex gap-3 items-center p-3">
+                        class="flex-1 flex flex-col gap-3  rgba p-2 rounded-md inset-shadow-sm inset-shadow-gray-300/50">
+                        <div class="flex gap-3 items-center p-3 flex-wrap">
                             <i class="fa-solid fa-hourglass-end text-3xl"></i>
-                            <p class="font-bold text-3xl">Taches Terminées</p>
+                            <p class="font-bold md:text-3xl text-md">Taches Terminées</p>
                         </div>
 
                         <div class="rgba  p-3 rounded-md inset-shadow-sm inset-shadow-gray-300/50 shadow-lg">
@@ -1053,6 +1073,7 @@
 
                     </div>
                     
+                </div>
                 </div>
             </div>
         </div>
