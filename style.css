@@ -48,6 +48,10 @@ h1 {
   font-family:monospace;
 }
 
+.clair:hover{
+  background: #fba364 !important;
+}
+
 @keyframes slide {
   0% {
     transform:translateX(-25%);
